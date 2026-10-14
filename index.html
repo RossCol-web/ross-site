@@ -151,12 +151,37 @@ h1 {
 :root {
   --ross-accent: #bd2633;
 }
+  /* Marca ROSS */
+.ross-symbol {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.15em;
+  height: 1.15em;
+  margin-right: 0.12em;
+  border: 2px solid #bd2633;
+  color: #bd2633;
+  font-family: "Arial Black", sans-serif;
+  font-size: 0.78em;
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: 0;
+  transform: skew(-5deg);
+  vertical-align: 0.04em;
+}
+
+.logo, .brand, .site-logo, .logo a {
+  font-family: "Arial Black", "Helvetica Neue", sans-serif;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
 </style>
 </head>
 <body>
   <header class="topbar">
     <div class="wrap nav">
-      <a class="brand" href="#inicio" aria-label="ROSS início">ROSS<span>.</span></a>
+      <a class="brand" href="#inicio" aria-label="ROSS início"><span class="ross-symbol" aria-hidden="true">R</span>OSS<span>.</span></a>
       <button class="menu-btn" id="menuBtn" aria-label="Abrir menu" aria-expanded="false">☰</button>
       <nav class="nav-links" id="navLinks" aria-label="Navegação principal">
         <a href="#sobre">Sobre</a>
